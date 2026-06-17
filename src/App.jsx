@@ -5,6 +5,7 @@ import Products from './components/Products'
 import MenuGallery from './components/MenuGallery'
 import About from './components/About'
 import Franchise from './components/Franchise'
+import Reviews from './components/Reviews'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
@@ -77,6 +78,7 @@ function App() {
         <MenuGallery />
         <About />
         <Franchise />
+        <Reviews />
         <Contact />
       </main>
       <Footer />

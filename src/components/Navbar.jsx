@@ -48,6 +48,15 @@ function Navbar({ activeSection }) {
             </li>
             <li>
               <a 
+                href="#reviews" 
+                className={`nav-link ${activeSection === 'reviews' ? 'active' : ''}`}
+                onClick={handleLinkClick}
+              >
+                Reviews
+              </a>
+            </li>
+            <li>
+              <a 
                 href="#contact" 
                 className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
                 onClick={handleLinkClick}
