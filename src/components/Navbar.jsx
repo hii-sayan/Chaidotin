@@ -12,16 +12,16 @@ function Navbar({ activeSection }) {
     <header className="navbar">
       <div className="container navbar-container">
         <a href="#hero" className="logo" onClick={handleLinkClick}>
-          <img src={logoImg} alt="ChaiDotin Logo" className="logo-img" />
-          <span className="logo-text">ChaiDotin<span className="logo-dot">.</span></span>
+          <img src={logoImg} alt="Chaidotin Logo" className="logo-img" />
+          <span className="logo-text" style={{ color: 'black', fontFamily: 'Kodchasan', fontWeight: 'bold' }}>Chaidotin</span>
         </a>
 
         {/* Navigation links */}
         <nav aria-label="Main Navigation">
           <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
             <li>
-              <a 
-                href="#menu-gallery" 
+              <a
+                href="#menu-gallery"
                 className={`nav-link ${activeSection === 'menu-gallery' ? 'active' : ''}`}
                 onClick={handleLinkClick}
               >
@@ -29,8 +29,8 @@ function Navbar({ activeSection }) {
               </a>
             </li>
             <li>
-              <a 
-                href="#about" 
+              <a
+                href="#about"
                 className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}
                 onClick={handleLinkClick}
               >
@@ -38,8 +38,8 @@ function Navbar({ activeSection }) {
               </a>
             </li>
             <li>
-              <a 
-                href="#franchise" 
+              <a
+                href="#franchise"
                 className={`nav-link ${activeSection === 'franchise' ? 'active' : ''}`}
                 onClick={handleLinkClick}
               >
@@ -47,8 +47,8 @@ function Navbar({ activeSection }) {
               </a>
             </li>
             <li>
-              <a 
-                href="#reviews" 
+              <a
+                href="#reviews"
                 className={`nav-link ${activeSection === 'reviews' ? 'active' : ''}`}
                 onClick={handleLinkClick}
               >
@@ -56,8 +56,8 @@ function Navbar({ activeSection }) {
               </a>
             </li>
             <li>
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
                 onClick={handleLinkClick}
               >
@@ -68,9 +68,9 @@ function Navbar({ activeSection }) {
         </nav>
 
         {/* Hamburger Toggle button */}
-        <button 
-          className={`hamburger-btn ${isOpen ? 'active' : ''}`} 
-          id="hamburger-btn" 
+        <button
+          className={`hamburger-btn ${isOpen ? 'active' : ''}`}
+          id="hamburger-btn"
           aria-label="Toggle Navigation Menu"
           onClick={() => setIsOpen(!isOpen)}
         >
